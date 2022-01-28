@@ -4,15 +4,13 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 )
 
-/*
 func main() {
 	nums := readInput()
 
 	fmt.Println(nums)
-	os.Exit(0)
+
 }
 
 func readInput() int {
@@ -26,8 +24,8 @@ func readInput() int {
 	}
 	return a
 }
-*/
-func main() {
+
+/*func main() {
 	s, _ := bufio.NewReader(os.Stdin).ReadString('\n')
 	s = strings.TrimSpace(s)
 	s1 := strings.Split(s, " ")
@@ -38,4 +36,4 @@ func main() {
 	}
 	//fmt.Println(len(s1))
 
-}
+}*/
