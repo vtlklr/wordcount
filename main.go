@@ -31,10 +31,11 @@ func main() {
 	s, _ := bufio.NewReader(os.Stdin).ReadString('\n')
 	s = strings.TrimSpace(s)
 	s1 := strings.Split(s, " ")
-	if len(s1) == 1 && s1[0] == "" {
+	/*if len(s1) == 1 && s1[0] == "" {
 		fmt.Println(213)
 	} else {
 		fmt.Println(len(s1))
-	}
+	}*/
+	fmt.Println(len(s1))
 
 }
