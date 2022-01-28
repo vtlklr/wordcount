@@ -1,14 +1,15 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strings"
 )
 
 func main() {
-	var s string
-	fmt.Scan(&s)
-	s = strings.TrimSpace(s)
+	s, _ := bufio.NewReader(os.Stdin).ReadString('\n')
+	s = strings.Trim(s, "\n")
 	s1 := strings.Split(s, " ")
 	fmt.Println(len(s1))
 }
