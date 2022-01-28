@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-
 	"os"
 )
 
@@ -14,12 +13,10 @@ func main() {
 }
 
 func readInput() int {
-
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Split(bufio.ScanWords)
 	var a int
 	for scanner.Scan() {
-
 		a++
 	}
 	return a
