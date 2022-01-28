@@ -3,22 +3,24 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"io"
-	"log"
+
 	"os"
-	"strings"
 )
 
 func main() {
-	s := readString()
-	s1 := strings.Split(s, " ")
-	fmt.Println(len(s1))
+	nums := readInput()
+
+	fmt.Println(nums)
 }
-func readString() string {
-	rdr := bufio.NewReader(os.Stdin)
-	str, err := rdr.ReadString('\n')
-	if err != nil && err != io.EOF {
-		log.Fatal(err)
+
+func readInput() int {
+
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Split(bufio.ScanWords)
+	var a int
+	for scanner.Scan() {
+
+		a++
 	}
-	return str
+	return a
 }
