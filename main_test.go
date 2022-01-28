@@ -11,10 +11,10 @@ func TestWordcount(t *testing.T) {
 	tests := []struct {
 		name, in, want string
 	}{
-		{"empty", "", "1"},
+		{"empty", "", "0"},
 		{"single", "ok", "1"},
-		{"several", "go is awesome", "1"},
-		{"even more", "php - not so much", "1"},
+		{"several", "go is awesome", "3"},
+		{"even more", "php - not so much", "5"},
 	}
 
 	for _, test := range tests {
