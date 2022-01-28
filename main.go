@@ -1,11 +1,12 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
+/*
 func main() {
 	nums := readInput()
 
@@ -23,7 +24,7 @@ func readInput() int {
 		a++
 	}
 	return a
-}
+}*/
 
 /*func main() {
 	s, _ := bufio.NewReader(os.Stdin).ReadString('\n')
@@ -37,3 +38,8 @@ func readInput() int {
 	//fmt.Println(len(s1))
 
 }*/
+func main() {
+	str := os.Args[1]
+	str1 := strings.Split(str, " ")
+	fmt.Println(len(str1))
+}
