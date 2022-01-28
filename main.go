@@ -40,6 +40,6 @@ func readInput() int {
 }*/
 func main() {
 	str := os.Args[1]
-	str1 := strings.Split(str, " ")
+	str1 := strings.Fields(str)
 	fmt.Println(len(str1))
 }
