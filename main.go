@@ -32,7 +32,7 @@ func main() {
 	s = strings.TrimSpace(s)
 	s1 := strings.Split(s, " ")
 	if len(s1) == 1 && s1[0] == "" {
-		fmt.Print("1")
+		fmt.Print("0")
 	} else {
 		fmt.Print(len(s1))
 	}
